@@ -166,13 +166,7 @@
                         <span>Main Menu</span>
                     </li>
                     <li class="submenu">
-                        <a href="#"><i class="feather-grid"></i> <span> Dashboard</span> <span
-                                class="menu-arrow"></span></a>
-                        <ul>
-                            <li><a href="index.php"> Dashboard Admin </a></li>
-                            <li><a href="teacher-dashboard.php"> Dashboard Professeur</a></li>
-                            <li><a href="student-dashboard.php"> Dashboard Etudiant</a></li>
-                        </ul>
+                        <a href="index.php"><i class="feather-grid"></i> <span> Dashboard</span></span></a>
                     </li>
                     <li class="submenu">
                         <a href="#"><i class="fas fa-graduation-cap"></i> <span> Etudiants</span> <span
