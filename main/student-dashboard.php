@@ -44,7 +44,7 @@
 </div>
 </div>
 </div>
-</div>
+</div> 
 </div>
 <div class="col-xl-3 col-sm-6 col-12 d-flex">
 <div class="card bg-comman w-100">
@@ -94,7 +94,7 @@
 </div>
 
 
-<div class="row">
+ <div class="row">
 <div class="col-12 col-lg-12 col-xl-8">
 <div class="card flex-fill comman-shadow">
 <div class="card-header">

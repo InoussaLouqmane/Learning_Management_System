@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 <title>Preskool - Students</title>
-<?php include('links_rel.php');?>
+<?php include('links_rel.php')?>
 
 <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
 
@@ -116,7 +116,7 @@ Fin search bar
 
 </div>
 
-<?php include('links_js.php');?>
+<?php include("links_js.php");?>
 
 <script src="assets/plugins/datatables/datatables.min.js"></script>
 

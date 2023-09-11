@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Preskool - Students</title>
 
+<<<<<<< HEAD
+<?php include('links_rel.php')?>
+=======
     <?php include('links_rel.php'); ?>
+>>>>>>> f7b21cc6ad7579bc3579b0456138e093773be92d
 
     <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
 
@@ -143,12 +147,20 @@
         </div>
 
 
+<<<<<<< HEAD
+</div>
+<?php include('footer.php');?>
+
+</div>
+<?php include("links_js.php");?>
+=======
     </div>
     <?php include('footer.php'); ?>
 
     </div>
 
     <?php include('links_js.php'); ?>
+>>>>>>> f7b21cc6ad7579bc3579b0456138e093773be92d
 
     <script src="assets/plugins/datatables/datatables.min.js"></script>
 

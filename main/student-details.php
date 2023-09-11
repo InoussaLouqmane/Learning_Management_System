@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 <title>Preskool - Détails Etudiants</title>
 
-<?php include('links_rel.php');?>
+<?php include('links_rel.php')?>
 <link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
 
 </head>
@@ -195,6 +195,6 @@ No needs for admin
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
 
-<?php include('links_js.php');?>
+<?php include("links_js.php");?>
 </body>
 </html>

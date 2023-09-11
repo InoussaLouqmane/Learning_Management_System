@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<?php include("common.php")?>
+<?php include('common.php');?>
 
 <div class="page-wrapper">
 <div class="content container-fluid">
@@ -86,9 +86,9 @@
 </td>
 <td class="text-end">
 <div class="actions">
-<!-- <a href="javascript:;" class="btn btn-sm bg-success-light me-2">
+<a href="javascript:;" class="btn btn-sm bg-success-light me-2">
 <i class="feather-eye"></i>
-</a> -->
+</a>
 <a href="edit-books.php" class="btn btn-sm bg-danger-light">
 <i class="feather-edit"></i>
 </a>
@@ -106,7 +106,7 @@
 </div>
 </div>
 
-<?php include("footer.php") ?>
+<?php include('footer.php');?>
 
 </div>
 

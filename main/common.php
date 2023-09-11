@@ -283,7 +283,7 @@
 <a href="exam.php"><i class="fas fa-clipboard-list"></i> <span>Exam list</span></a>
 </li> -->
                 <li class="submenu">
-                    <a href="#"><span> Emploi du temps </span> <span class="menu-arrow"></span></a>
+                    <a href="#"><i class="fas fa-calendar"></i><span> Emploi du temps </span> <span class="menu-arrow"></span></a>
                     <ul>
                         <li> <a href="event.php"><span> Anglais </span></a></li>
                         <li> <a href="event.php"><span> Japonais </span></a></li>
@@ -293,7 +293,7 @@
                 </li>
 
                 <li class="submenu">
-                    <a href="#"><span> Notes </span> <span class="menu-arrow"></span></a>
+                    <a href="#"><i class="fas fa-sticky-note"></i><span> Notes </span> <span class="menu-arrow"></span></a>
                     <ul>
                         <li> <a href="notes.php"><span> Anglais </span></a></li>
                         <li> <a href="notes.php"><span> Japonais </span></a></li>

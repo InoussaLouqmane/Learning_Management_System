@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<?php include("common.php");?>
+<?php include('common.php');?>
 
 <div class="page-wrapper">
 <div class="content container-fluid">
@@ -77,7 +77,7 @@
 
 </div>
 
-<?php include("footer.php");?>
+<?php include('footer.php');?>
 
 </div>
 
