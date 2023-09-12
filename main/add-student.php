@@ -93,17 +93,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-sm-4">
-                                        <div class="form-group local-forms">
-                                            <label>Durée <span class="login-danger">*</span> </label>
-                                            <select name="duree" class="form-control select" required>
-                                                <option value="debutant">Débutant</option>
-                                                <option value="intermediaire">Intermédiaire</option>
-                                                <option value="avance">Avancé</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
+                                    
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
                                             <label>E-Mail <span class="login-danger">*</span></label>

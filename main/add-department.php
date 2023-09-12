@@ -37,7 +37,7 @@
 
 <!-- debut form -->
 
-<form>
+<form method="post" action="test.php">
 <div class="row">
 <div class="col-12">
 <h5 class="form-title"><span>Department Details</span></h5>

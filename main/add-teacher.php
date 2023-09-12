@@ -50,15 +50,6 @@
 </div>
 </div>
 
-<div class="col-12 col-sm-4">
-<div class="form-group local-forms">
-<label>Genre <span class="login-danger">*</span></label>
-<select class="form-control ">
-<option value="1">Masculin</option>
-<option value="0">Féminin</option>
-</select>
-</div>
-</div>
 
 <div class="col-12 col-sm-4">
 <div class="form-group local-forms">
@@ -66,7 +57,7 @@
 <select class="form-control ">
 <option value="1">English </option>
 <option value="0">Japanese </option>
-
+...
 </select>
 </div>
 </div>

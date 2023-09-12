@@ -168,84 +168,70 @@
                     <li class="submenu">
                         <a href="index.php"><i class="feather-grid"></i> <span> Dashboard</span></span></a>
                     </li>
+
                     <li class="submenu">
                         <a href="#"><i class="fas fa-graduation-cap"></i> <span> Etudiants</span> <span
                                 class="menu-arrow"></span></a>
                         <ul>
                             <li><a href="#">Listes des Etudiants <span class="menu-arrow"></span></a>
                                 <ul>
-                                    <li>
-                                        <a href="students.php">Anglais</a>
-                                    </li>
+                                    <li><a href="students.php">Anglais</a></li>
+                                    <li><a href="students.php">Japonais</a></li>
+                                    <li> <a href="students.php">Tous</a></li>
+                                </ul>
+
                             </li>
-                            <li>
-                                <a href="students.php">Japonais</a>
-                            </li>
+                            <li><a href="add-student.php">Ajout d'un Etudiant</a></li>
+                        </ul>
                     </li>
-                    <li> <a href="students.php">Tous</a></li>
-                </ul>
 
-                </li>
-
-
-                <li><a href="add-student.php">Ajout d'un Etudiant</a></li>
-                </ul>
-                </li>
                 <li class="submenu">
                     <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Professeurs</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
                         <li><a href="#">Listes des Professeurs <span class="menu-arrow"></span></a>
                             <ul>
-                                <li>
-                                    <a href="teachers.php">Anglais</a>
-                                </li>
+                                <li><a href="teachers.php">Anglais</a> </li>
+                        
+                                <li><a href="teachers.php">Japonais</a></li>
+               
+                                <li> <a href="teachers.php">Tous</a></li>
+                            </ul>
+
                         </li>
-                        <li>
-                            <a href="teachers.php">Japonais</a>
-                        </li>
-                </li>
-                <li> <a href="teachers.php">Tous</a></li>
-                </ul>
 
-                </li>
+                        <li><a href="add-teacher.php">Ajout d'un Professeur</a></li>
 
-                <li><a href="add-teacher.php">Ajout d'un Professeur</a></li>
-
-                </ul>
+                    </ul>
                 </li>
                 <li class="submenu">
                     <a href="#"><i class="fas fa-building"></i> <span> Filières</span> <span
                             class="menu-arrow"></span></a>
                     <ul>
-                        <li><a href="#"><span> Liste des filières </span> <span class="menu-arrow"></span></a>
+                        <li><a href="departments.php"><span> Liste des filières </span></a> </li>
 
+                        <li><a href="add-department.php">Ajout d'une Filière</a></li>
+
+                    </ul>
+
+                </li>
+
+
+                <li class="submenu">
+                    <a href="#"><i class="fas fa-book-reader"></i> <span> Matières </span> <span class="menu-arrow"></span></a>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-building"></i> <span> Filières </span> <span class="menu-arrow"></a>
                             <ul>
-                                <li>
-                                    <a href="subjects.php">Anglais</a>
-                                </li>
-                        </li>
-                        <li>
-                            <a href="subjects.php">Japonais</a>
-                        </li>
-                </li>
-                <li> <a href="subjects.php">Toutes</a></li>
-                </ul>
+                                <li><a href="subjects.php">Anglais</a> </li>
+                                <li><a href="subjects.php">Japonais</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="add-subject.php"><i class="fas fa-book-reader"></i> <span> Ajout d'une matière </span> </a></li>
+                    </ul>
+                           
+                </li>   
 
 
-                </li>
-                <li><a href="add-department.php">Ajout d'une Filière</a></li>
-
-                </ul>
-                </li>
-                <!-- <li class="submenu">
-<a href="#"><i class="fas fa-book-reader"></i> <span> Matières </span> <span class="menu-arrow"></span></a>
-<ul>
-<li><a href="subjects.php">Liste des Matières</a></li>
-<li><a href="add-subject.php">Ajout d'une Matière</a></li>
-<li><a href="edit-subject.php">Subject Edit</a></li>
-</ul>
-</li> -->
                 <!-- 
     Pas besoin de ce submenu pour l'instant.
     <li class="submenu">
