@@ -14,8 +14,23 @@
 
 <body>
 
-    <?php include('common.php'); ?>
+    <?php include('common.php'); 
+        if(isset($_GET['id'])){
+        
+            $id=$_GET['id'];
+            $request = "SELECT * from etudiant where id_Filiere = :id ";
+            $response = $pdo->prepare($request);
+            $datas =$response->execute(['id'=>$id]);
+        
+        } else {
 
+            $request = "SELECT * from filiere";
+            $response = $pdo->query($request);
+            
+        }
+        $datas = $response->fetchAll();
+    ?>
+    
     <div class="page-wrapper">
         <div class="content container-fluid">
 
@@ -66,7 +81,7 @@
                             <div class="page-header">
                                 <div class="row align-items-center">
                                     <div class="col">
-                                        <h3 class="page-title">Students</h3>
+                                        <h3 class="page-title"><?=$data['id_Filiere'];?></h3>
                                     </div>
                                     <div class="col-auto text-end float-end ms-auto download-grp">
                                         <a href="students.php" class="btn btn-outline-gray me-2 active"><i
@@ -101,23 +116,24 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        <?php foreach($datas as $data):?>
                                         <tr>
                                             <td>
                                                 <div class="form-check check-tables">
                                                     <input class="form-check-input" type="checkbox" value="something">
                                                 </div>
                                             </td>
-                                            <td>PRE1234</td>
+                                            <td><?= $data['id_Etudiant'] ?></td>
                                             <td>
-                                                <h2 class="table-avatar">
-                                                    <a href="student-details.php">Nathan Humphries</a>
+                                                <h2 class="table-avatar">   
+                                                    <a href="student-details.php?"> <?= $data['nomEtudiant'] ?> </a>
                                                 </h2>
                                             </td>
-                                            <td>26 Apr 1994</td>
+                                            <td> <?= $data['date_Naissance'] ?> </td>
 
-                                            <td>077 3499 9959</td>
-                                            <td>natries@gmail.com</td>
-                                            <td>21-08-2021</td>
+                                            <td> <?= $data['telephone'] ?> </td>
+                                            <td> <?=$data['email'] ?></td>
+                                            <td><?= $data['date_inscription'] ?></td>
                                             <td class="text-end">
                                                 <div class="actions ">
                                                     <a href="student-details.php"
@@ -133,6 +149,7 @@
                                                 </div>
                                             </td>
                                         </tr>
+                                    <?php endforeach?>
                                     </tbody>
                                 </table>
                             </div>

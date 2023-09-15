@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +41,7 @@
                 <div class="col-sm-12">
                     <div class="card comman-shadow">
                         <div class="card-body">
-                            <form action="" method="post" enctype="multipart/form-data">
+                            <form action="backend/traitement/post-student.php" method="post" enctype="multipart/form-data">
                                 <div class="row">
                                     <div class="col-12">
                                         <h5 class="form-title student-info">Student Information <span><a
@@ -80,16 +81,17 @@
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms calendar-icon">
                                             <label>Date de Naissance <span class="login-danger">*</span></label>
-                                            <input class="form-control datetimepicker" type="text"
+                                            <input class="form-control datetimepicker" type="date" name="date_naissance"
                                                 placeholder="DD-MM-YYYY">
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
                                             <label>Filière <span class="login-danger">*</span> </label>
-                                            <select name="filiere" class="form-control select" required>
-                                                <option value="ang">Anglais</option>
-                                                <option value="jap">Japonais</option>
+                                            <select  class="form-control" name="id_filiere" required>
+                                                <?php foreach($datas as $data) : ?>
+                                                <option value="<?= $data['id_Filiere'];?>"><?= $data['nomFiliere'];?> </option>
+                                                <?php endforeach?>
                                             </select>
                                         </div>
                                     </div>
@@ -97,13 +99,13 @@
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
                                             <label>E-Mail <span class="login-danger">*</span></label>
-                                            <input class="form-control" type="text" placeholder="Enter Email Address">
+                                            <input class="form-control" type="text" name="email" placeholder="Enter Email Address">
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-4">
                                         <div class="form-group local-forms">
                                             <label>Téléphone</label>
-                                            <input class="form-control" type="text"
+                                            <input class="form-control" type="text" name="telephone"
                                                 placeholder="Enter the phone number">
                                         </div>
                                     </div>
@@ -113,14 +115,14 @@
                                             <label>Upload Student Photo (150px X 150px)</label>
                                             <div class="uplod">
                                                 <label class="file-upload image-upbtn mb-0">
-                                                    Choose File <input type="file">
+                                                    Choose File <input type="file" name="image">
                                                 </label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="student-submit">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                                         </div>
                                     </div>
                                 </div>

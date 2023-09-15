@@ -1,3 +1,10 @@
+<?php require_once("backend/connexion.php");
+    $request = "SELECT * from filiere";
+    $response = $pdo->query($request);
+    $datas = $response->fetchAll();
+    
+?>
+
 <!--
     Ce fichier contient une partie commune à toutes mes pages de templates...
 -->
@@ -175,8 +182,13 @@
                         <ul>
                             <li><a href="#">Listes des Etudiants <span class="menu-arrow"></span></a>
                                 <ul>
-                                    <li><a href="students.php">Anglais</a></li>
-                                    <li><a href="students.php">Japonais</a></li>
+                                    <?php foreach($datas as $data) :?>
+                                        
+                                        <li> 
+                                            <a href="students.php?id=<?= $data['id_Filiere'] ;?>"> <?=$data['nomFiliere'];?> </a>
+                                        </li>  
+                                        
+                                    <?php endforeach ?>
                                     <li> <a href="students.php">Tous</a></li>
                                 </ul>
 
@@ -222,8 +234,13 @@
                     <ul>
                         <li><a href="#"><i class="fas fa-building"></i> <span> Filières </span> <span class="menu-arrow"></a>
                             <ul>
-                                <li><a href="subjects.php">Anglais</a> </li>
-                                <li><a href="subjects.php">Japonais</a></li>
+                                <?php foreach($datas as $data) :?>
+                                        
+                                        <li> 
+                                            <a href="department.php?id=<?= $data['id_Filiere'] ;?>"> <?=$data['nomFiliere'];?> </a>
+                                        </li>  
+                                        
+                                <?php endforeach ?>
                             </ul>
                         </li>    
                         <li><a href="add-subject.php"><i class="fas fa-book-reader"></i> <span> Ajout d'une matière </span> </a></li>

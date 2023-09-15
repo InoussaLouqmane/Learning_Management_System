@@ -15,7 +15,7 @@ try {
     // Vous êtes maintenant connecté à la base de données, vous pouvez commencer à effectuer des requêtes ici
 
     
-    $query = "INSERT INTO Filiere (nomFiliere, coordonateur") VALUES ("Anglais", "Jack");
+    $query = "INSERT INTO Filiere (nomFiliere, coordonateur) VALUES ('Anglais', 'Jack')";
     $stmt = $pdo->query($query);
 
     // Fermez la connexion à la base de données lorsque vous avez terminé
